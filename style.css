@@ -1,0 +1,90 @@
+body{
+
+-webkit-user-select: none;
+user-select: none;
+margin:0;
+overflow:hidden; /* Evita el scroll en dispositivos móviles */
+touch-action: none; /* Evita el zoom y el desplazamiento en dispositivos táctiles */
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:#ffd6ea; /* Fondo rosa claro */
+font-family:Calibri;
+}
+
+#gameCanvas{
+display:none;
+background:black;
+touch-action:none;
+}
+
+.contenedor{
+width:90%;
+max-width:450px;
+z-index:1001;
+}
+
+.envoltura-sobre{
+background:#d8a0f0;
+box-shadow:0 10px 40px rgba(0,0,0,0.3);
+border-radius:20px;
+padding:10px;
+}
+
+.carta{
+background:white;
+text-align:center;
+padding:25px;
+border-radius:15px;
+}
+
+.contenido{
+text-align:center;
+margin-bottom:20px;
+}
+
+.contenido h2{
+color:#a020f0;
+text-align:center;
+}
+
+.footer-texto{
+text-align:center;
+margin-top:20px;
+font-weight:bold;
+}
+
+.btn-aceptar{
+background:#a020f0;
+color:white;
+border:none;
+padding:15px;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+width:100%;
+user-select: none;
+}
+
+#mobileControls{
+display:none;
+position:fixed;
+bottom:30px;
+width:100%;
+justify-content:space-evenly;
+user-select: none; /* Evita la selección de texto en los botones táctiles */
+touch-action: none; /* Evita el zoom y el desplazamiento en dispositivos táctiles */
+}
+
+#mobileControls button{
+width:80px;
+height:80px;
+font-size:35px;
+border-radius:50%; 
+border:none;
+background:#a020f0;
+color:white;
+user-select: none; /* Evita la selección de texto en los botones táctiles */
+touch-action: none; /* Evita el zoom y el desplazamiento en dispositivos táctiles */
+}
